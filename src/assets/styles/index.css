@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato'), url(../fonts/Lato-Regular.woff) format('opentype');
+}
+
+@font-face {
+    font-family: 'Lato-Bold';
+    src: local('Lato'), url(../fonts/Lato-Bold.woff) format('opentype');
+}
+
+@font-face {
+    font-family: 'Recoleta-Bold';
+    src: local('Recoleta-Bold'), url(../fonts/Recoleta-Bold.woff) format('opentype');
+}
+
+@font-face {
+  font-family: 'RecoletaAlt-Bold';
+  src: local('RecoletaAlt-Bold'), url(../fonts/RecoletaAlt-Bold.woff) format('opentype');
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Lato-Bold', 'Lato', 'Recoleta-Bold', 'RecoletaAlt-Bold',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

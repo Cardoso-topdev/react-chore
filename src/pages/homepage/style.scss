@@ -1,0 +1,49 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixin';
+
+.intro{
+  
+  .intro-chore-title{
+    margin: 100px 0;
+    position: absolute;
+    @include mq('tablet-wide', max) {
+      transform: translate(-50%, 0);
+      left: 50%;
+    }
+  }
+  .intro-extra{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .intro-image{
+    @include mq('tablet-wide', max) {
+      opacity: 0.5;
+      z-index: -1;
+    }
+  }
+}
+
+.intro-extra{
+  text-align: center;
+  margin: 100px 0;
+  color:$titleColor;
+}
+
+.intro-chore {
+  .chore-text {
+    text-align: center;
+    h1 {
+      color:$titleColor;
+      font-size: 72px;
+    }
+  }
+  
+}
+
+#features{
+  .icon1-parent{
+    margin-bottom: 50px;
+  }
+}

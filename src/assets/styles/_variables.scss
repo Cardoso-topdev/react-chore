@@ -1,0 +1,16 @@
+$titleColor:  rgba(22, 0, 92, 1);
+$contentColor:  rgba(42, 32, 74, 0.8);
+$errColor: rgba(255, 68, 34, 1);
+$hoverColor:  rgba(30, 144, 255, 1);
+
+// Media query breakpoints
+$breakpoints: (
+    "phone":        400px,
+    "phone-wide":   480px,
+    "phablet":      560px,
+    "tablet-small": 640px,
+    "tablet":       768px,
+    "tablet-wide":  992px,
+    "desktop":      1200px,
+    "desktop-wide": 1440px
+);

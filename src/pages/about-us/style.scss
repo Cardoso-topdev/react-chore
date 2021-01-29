@@ -1,0 +1,182 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixin';
+
+header{
+  height: 900px;
+}
+.about-us{
+  nav{
+    background-color: #1e90ff!important;
+    .color-white{
+      color: white!important;
+    }
+  }
+  .intro{
+    &.about-us-intro{
+      background-image: url(../../assets/imgs/about-us-header-bk.png);;
+    }
+    .content-wrapper {
+      display: flex;
+      margin-top: 300px;
+      .img-container{
+        flex:3;
+        padding-right: 100px;
+        img {
+          position: absolute;
+          width: 850px;
+          bottom: -300px;
+          z-index: 0;
+        }
+      }
+      .main-content{
+        flex: 4;
+        h1, p{
+         color: white;
+         white-space: pre-wrap;
+        }
+        h1 {
+          width: 500px;
+          position: relative;
+        }
+        p {
+          max-height: 395px;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+} 
+
+.sale-section {
+  background-color: white;
+  position: relative;
+  height: 1000px;
+  .container {
+    display: flex;
+    .left-side, .right-side {
+      flex: 1;
+      position: relative;
+    }
+    .sale-left-content{
+      position: absolute;
+      left: 200px;
+      top: 290px;
+    }
+  }
+  .img-icon{
+    position: absolute;
+    &.note-check {
+      margin-top: 300px;
+      right: 100px;
+    }
+  }
+  .icon7{
+    left: 100px;
+    top: 300px;
+  }
+  .icon8{
+    left: 600px;
+    top: 150px;
+  }
+  .icon9{
+    left: 600px;
+    bottom: 200px;
+  }
+  .icon10{
+    top: 150px;
+    right: 450px;
+  }
+  .icon11{
+    bottom: 100px;
+    right: 450px;
+  }
+  .note-bk{
+    right: 0px;
+    top: 200px;
+  }
+}
+
+.credit-academy{
+  text-align: center;
+  .user-section{
+    display: flex;
+    margin-bottom: 150px;
+    @include mq('tablet-wide', max) {
+      flex-direction: column!important;
+      .user-info{
+        margin-top: 50px;
+      }
+    }
+    .user-img-wrapper{
+      position: relative;
+      flex: 3;
+      .pattern-bottom{
+        position: absolute;
+        z-index: -1;
+        bottom: 0px;
+      }
+      .pattern-top {
+        position: absolute;
+        z-index: -1;
+        left: 85px;
+        top: -20px;
+      }
+      .user-avatar{
+        margin: 10px;
+      }
+    }
+    .user-info {
+      position: relative;
+      flex: 3;
+      .user-info-wrapper {
+        width: 400px;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        text-align: left;
+        .user-name{
+          color: $titleColor;
+          font-size: 36px;
+        }
+        .user-description {
+          color: $contentColor;
+          font-size: 18px;
+        }
+      }
+    }
+    &.flex-reverse {
+      flex-direction: row-reverse;
+    }
+    .row-gap{
+      flex: 1;
+    }
+    .social-icon{
+      margin: 20px 20px 0 0;
+    }
+  }
+  .credit-bk-container{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 120px;
+    .vect-1 {
+      height: 493px;
+    }
+    .vect-2 {
+      margin-top: 200px;
+    }
+  }
+  .container{
+    .career-wrapper {
+      text-align: left;
+      padding-left: 150px;
+      margin-top: -100px;
+    }
+
+  }
+}
+
+
+
+

@@ -1,0 +1,48 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixin';
+
+.privacy{
+  margin-top: 100px;
+  .accordion-item{
+    .accordion-item__title {
+      position: relative;
+      cursor: pointer;
+      transition: color .3s ease-in-out;
+      &[aria-expanded=true]::after {
+        transform: rotate(180deg);
+      }
+      &:hover{
+        color:$hoverColor;
+      }
+      &::after{
+        position: absolute;
+        content: '';
+        top: 0;
+        right: 0;
+        width: 34px;
+        height: 34px;
+        background: url("../../assets/imgs/Vector.png") no-repeat center;
+        transition: transform .3s ease-in-out;
+      }
+    }
+    .accordion-item__content {
+      margin-top: 40px;
+      p.content{
+        white-space: pre-line;
+      }
+    }
+  }
+}
+
+.sub-title{
+  font-family: 'Lato';
+  line-height: 27px;
+  font-size: 24px;
+  font-weight: 800;
+  font-style: normal;
+  color: $titleColor;
+}
+
+#page-top{
+  overflow-y: hidden;
+}

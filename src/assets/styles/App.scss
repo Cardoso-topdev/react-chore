@@ -1,0 +1,79 @@
+@import 'variables';
+@import 'mixin';
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.link-btns{
+  display: flex;
+  flex-direction: column;
+  min-width: 175px;
+}
+
+.normal-desc {
+  font-family: 'Lato';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: $contentColor;
+}
+
+.primary-border {
+  border: 1px solid rgba(194, 194, 194, 0.8);
+  padding: 30px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+#footer a.list:hover{
+  color: #1E90FF
+}
+
+@include mq('tablet-wide', max) {
+  .img-responsive{
+    transform: translate(-50%, 0)!important;
+    left: 50%!important;
+    position: relative!important;
+  }
+  #footer .row{
+    text-align: center;
+  }
+  .opacitiy-0_5{
+    opacity: 0.5;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

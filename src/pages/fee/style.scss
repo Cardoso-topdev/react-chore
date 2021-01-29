@@ -1,0 +1,38 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixin';
+
+.fee{
+  margin-top: 200px;
+  text-align: center;
+  .flex-between-space {
+    display: flex;
+    justify-content: space-between;
+    .detail-item{
+      display: flex;
+      flex-direction: column;
+      span{
+        font-weight: 500;
+        &.item-value{
+          color: $errColor;
+        }
+      }
+    }
+    h3{
+      margin: 0;
+      &.fee-item-price {
+        color: $errColor;
+      }
+    }
+  }
+  .extra-content{
+    text-align: left;
+    margin: 30px;
+  }
+  .credit-feature{
+    text-align: left;
+  }
+  .fee-item-title {
+    color: $titleColor;
+  }
+}
+
