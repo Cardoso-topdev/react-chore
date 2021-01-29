@@ -2,7 +2,23 @@
 @import '../../assets/styles/mixin';
 
 .intro{
-  
+  @include mq('tablet-wide', max) {
+    .intro-text{
+      h1{
+        text-align: center;
+      }
+      p {
+        max-width: 600px;
+      }
+    }
+  }
+  @include mq('tablet', max) {
+    .intro-text{
+      p {
+        max-width: 400px;
+      }
+    }
+  }
   .intro-chore-title{
     margin: 100px 0;
     position: absolute;
@@ -21,6 +37,7 @@
     @include mq('tablet-wide', max) {
       opacity: 0.5;
       z-index: -1;
+      width: 90%;
     }
   }
 }

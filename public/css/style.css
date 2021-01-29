@@ -71,6 +71,7 @@ hr {
 #menu {
 	padding: 15px;
 	transition: all 0.8s;
+	width: inherit;
 }
 #menu.navbar-default {
 	background-color: white;

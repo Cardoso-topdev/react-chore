@@ -8,10 +8,7 @@ const Intro = props => <div className="intro">
         <SectionTitle header = "Chore" extraCls="intro-chore-title"/>
         <img src="img/intro.png" alt="" className="intro-image" width={540} />
         <div className="col-md-6 intro-text">
-          <h1>
-            {props.data ? props.data.title : "Loading"}
-            <span></span>
-          </h1>
+          <h1>Chores done.<br />No-fuss</h1>
           <p>
             {props.data ? props.data.paragraph : "Loading"}
           </p>
