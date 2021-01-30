@@ -17,7 +17,7 @@ const Introduce = () => <div id="features" className="container text-center">
       </div>
       <div className="col-xs-12 col-md-4 mt-100">
         <div className="section-title text-left">
-          <h2>Set a <br/> spending <br /> limit.</h2>
+          <h2 className = "spending-limit">Set a spending limit.</h2>
           <p>Create a Chore card and set a spending limit, giving you the final say on how much your youth can charge to their card</p>
         </div>
         <div className="text-left">

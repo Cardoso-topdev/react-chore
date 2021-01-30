@@ -64,3 +64,11 @@
     margin-bottom: 50px;
   }
 }
+
+.spending-limit{
+  width: 200px;
+  @include mq('tablet-wide', max) {
+    width: 100%;
+    text-align: center;
+  }
+}
