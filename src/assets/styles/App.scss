@@ -42,6 +42,9 @@
   }
   #footer .row{
     text-align: center;
+    img {
+      margin-bottom: 20px;
+    }
   }
   .opacitiy-0_5{
     opacity: 0.5;
@@ -75,5 +78,17 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@include mq('tablet', max) {
+  h1, h2{
+    font-size: 48px!important;
+  }
+
+  p{
+    max-width: 400px!important;
+    text-align: center!important;
+    margin: auto!important;
   }
 }
