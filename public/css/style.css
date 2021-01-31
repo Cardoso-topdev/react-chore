@@ -71,6 +71,7 @@ hr {
 #menu {
 	padding: 15px;
 	transition: all 0.8s;
+	width: inherit;
 }
 #menu.navbar-default {
 	background-color: white;
@@ -205,7 +206,6 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	font-weight: 300;
 	line-height: 30px;
 	margin: 0 auto;
-	margin-bottom: 60px;
 	opacity: 0.7;
 }
 .intro-text {
@@ -215,16 +215,11 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 /* Features Section */
 #features {
+	margin-top: 150px;
 	padding: 0;
 	/* margin-top: 150px;
 	padding-top: 50px; */
 	background: #FFF8EE;
-}
-#features .intro-image {
-	width: 100%;
-	height: 300px;
-	margin-top: -150px;
-	background-image: url(../img/union1.png);
 }
 #features i.fa {
 	font-size: 38px;
@@ -278,7 +273,6 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 #about .onboard .line {
 	position: absolute;
-	height: 470px;
 }
 #about .onboard .line::after {
 	content: "";
@@ -303,6 +297,8 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 #services {
 	background: #FFF8EE;
 	color: #16005C;
+	padding-bottom: 200px;
+	/* margin-bottom: 200px; */
 }
 #services .service-desc {
 	margin: 10px 10px 20px;
@@ -416,11 +412,15 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 .hover-bg:hover .hover-text {
 	opacity: 1;
 }
+#portfolio {
+	margin-bottom: 200px;
+}
 #portfolio .intro-image {
 	width: 100%;
 	height: 300px;
 	margin-bottom: -250px;
 	background-image: url(../img/union2.png);
+	background-repeat: no-repeat;
 }
 /* Testimonials Section */
 #testimonials {
@@ -651,7 +651,7 @@ color: #777;
 }
 .onboard .line {
 	/* border: #16005C 2px dashed; */
-	height: 500px;
+	/* height: 500px; */
 }
 .onboard .hLine {
 	width: 100%;

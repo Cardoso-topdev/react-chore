@@ -3,7 +3,7 @@ import React from 'react'
 const Services = () => <div id="services" className="container">
   <div className="row" style={{ marginTop: 14 }}>
     <div className="col-xs-12 col-md-6 onboard">
-      <div className="circle" style={{ marginLeft: 117 }}></div>
+      <div className="circle"></div>
       <div className="hLine"></div>
     </div>
     <div className="col-xs-12 col-md-2 onboard text-center">
@@ -31,6 +31,7 @@ const Services = () => <div id="services" className="container">
         </div>
       </div>
     </div>
+    {/* <div className="intro-image" /> */}
   </div>
 </div>
 

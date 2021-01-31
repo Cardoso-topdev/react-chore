@@ -30,13 +30,13 @@ const Navigation = props => <nav id="menu" className="navbar navbar-default navb
           <a href="/#features" className={props.isColorWhite && "page-scroll color-white" || "page-scroll"}>How it works</a>
         </li>
         <li>
-          <a href="/#about" className={props.isColorWhite && "page-scroll color-white" || "page-scroll"}>Pricing</a>
+          <a href="/fee" className={props.isColorWhite && "page-scroll color-white" || "page-scroll"}>Pricing</a>
         </li>
         <li>
-          <a href="/#services" className={props.isColorWhite && "page-scroll color-white" || "page-scroll"}>FAQ</a>
+          <a href="/contactus#faq" className={props.isColorWhite && "page-scroll color-white" || "page-scroll"}>FAQ</a>
         </li>
         <li>
-          <a href="/#contact" className={props.isColorWhite && "page-scroll color-white" || "page-scroll"}>Contact us</a>
+          <a href="/contactus" className={props.isColorWhite && "page-scroll color-white" || "page-scroll"}>Contact us</a>
         </li>
         <li>
           <a href="/aboutus" className={props.isColorWhite && "page-scroll color-white" || "page-scroll"}>About us</a>

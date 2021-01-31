@@ -655,3 +655,35 @@ Last updated: December 1st, 2020
 
 
 `
+export const FAQ_DATA = [
+  {
+    title: "When will Credit Academy be available?",
+    content: `Cognitive the stand spot. In, to who paper tag family in ideas was and gilded rethoric five he not another the but noting even his got divided rolled make that expected his of usual. Were was concepts of wonder much boa applications our to a of would from more prudently.
+    .`
+  },
+  {
+    title: "What do I need to get started?",
+    content: `Cognitive the stand spot. In, to who paper tag family in ideas was and gilded rethoric five he not another the but noting even his got divided rolled make that expected his of usual. Were was concepts of wonder much boa applications our to a of would from more prudently.
+    .`
+  },
+  {
+    title: "Will Credit Academy charge fees?",
+    content: `Cognitive the stand spot. In, to who paper tag family in ideas was and gilded rethoric five he not another the but noting even his got divided rolled make that expected his of usual. Were was concepts of wonder much boa applications our to a of would from more prudently.
+    .`
+  },
+  {
+    title: "How will you prevent fraud?",
+    content: `Cognitive the stand spot. In, to who paper tag family in ideas was and gilded rethoric five he not another the but noting even his got divided rolled make that expected his of usual. Were was concepts of wonder much boa applications our to a of would from more prudently.
+    .`
+  },
+  {
+    title: "Can businesses use Credit Academy?",
+    content: `Cognitive the stand spot. In, to who paper tag family in ideas was and gilded rethoric five he not another the but noting even his got divided rolled make that expected his of usual. Were was concepts of wonder much boa applications our to a of would from more prudently.
+    .`
+  },
+  {
+    title: "Can I use my local currency in Credit Academy?",
+    content: `Cognitive the stand spot. In, to who paper tag family in ideas was and gilded rethoric five he not another the but noting even his got divided rolled make that expected his of usual. Were was concepts of wonder much boa applications our to a of would from more prudently.
+    .`
+  },
+]
