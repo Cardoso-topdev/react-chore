@@ -4,21 +4,19 @@ import Intro from './intro';
 import Introduce from './introduce';
 import About from './about';
 import Services from './services';
-import Gallery from './gallery';
-import Footer from '../../components/footer';
 import JsonData from '../../data/data.json';
+import Gallery from './gallery'
 import "./style.scss"
-import IntroChore from './intro-chore';
+import Footer from '../../components/footer';
 
 const HomePage = () => <React.Fragment>
   <Navigation isColorWhite={false} />
   <Intro data={JsonData.Header} />
-  <IntroChore />
   <Introduce />
   <About />
   <Services />
   <Gallery />
-  <Footer /> 
+  <Footer />
 </React.Fragment>
 
 export default HomePage

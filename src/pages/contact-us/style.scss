@@ -1,0 +1,81 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixin';
+
+.contact-us{
+  margin-top: 100px;
+  margin-bottom: 300px;
+  .contact-left{
+    h2{
+      font-size: 72px;
+    }
+    @include mq('tablet', max) {
+      h2{
+        text-align: center;
+      }
+    }
+    .contact-form{
+      padding: 0 100px 0 0;
+      @include mq('tablet-wide', max) {
+        padding: 0;
+      }
+      
+      .form-item{
+        textarea{
+          height: 200px;
+          padding: 20px;
+        }
+        input{
+          height: 50px;
+          padding: 0 20px;
+        }
+        input, textarea{
+          width: 100%;
+        }
+      }
+    }
+  }
+  .contact-right{
+    img{
+      width: 100%;
+    }
+  }
+}
+.faq-container {
+  .main-container {
+    background: #FFF8EE;
+    padding-top: 100px;
+    h2 {
+      text-align: center;
+      font-size: 48px;
+      margin-bottom: 72px;
+    }
+    .accordion-item{
+      margin: auto;
+      width: 550px;
+      margin-top: 40px;
+      @include mq('tablet', max) {
+        p{
+          text-align: left !important;
+          margin-left: 0 !important;
+        }
+      }
+      .accordion-item__title{
+        margin-left: -50px;
+        cursor: pointer;
+        &::before{
+          content: "";
+          padding-right: 50px;
+          background: url("../../assets/imgs/plus.svg") no-repeat center;
+        }
+        &[aria-expanded=true]::before {
+          content: "";
+          padding-right: 50px;
+          background: url("../../assets/imgs/minus.svg") no-repeat center;
+        }
+      }
+    }
+    .career-girl{
+      margin: 50px 0 -20px 50px;
+    }
+  }
+}
