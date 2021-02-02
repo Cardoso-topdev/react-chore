@@ -8,10 +8,12 @@ import JsonData from '../../data/data.json';
 import Gallery from './gallery'
 import "./style.scss"
 import Footer from '../../components/footer';
+import IntroChore from './intro-chore'
 
 const HomePage = () => <React.Fragment>
   <Navigation isColorWhite={false} />
   <Intro data={JsonData.Header} />
+  <IntroChore />
   <Introduce />
   <About />
   <Services />

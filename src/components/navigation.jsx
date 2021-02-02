@@ -16,7 +16,7 @@ const Navigation = props => <nav id="menu" className="navbar navbar-default navb
       </button>
       <a className="navbar-brand page-scroll" href="/#page-top">
         <img
-          src={props.isColorWhite && "img/logo-white.png" || "img/logo.png"}
+          src={props.isColorWhite ? "img/logo-white.png" : "img/logo.png"}
           className="img-responsive"
           alt="Logo"
           width={140} />
@@ -27,19 +27,19 @@ const Navigation = props => <nav id="menu" className="navbar navbar-default navb
       id="bs-example-navbar-collapse-1" >
       <ul className="nav navbar-nav">
         <li>
-          <a href="/#features" className={props.isColorWhite && "page-scroll color-white" || "page-scroll"}>How it works</a>
+          <a href="/#features" className={props.isColorWhite ? "page-scroll color-white" : "page-scroll"}>How it works</a>
         </li>
         <li>
-          <a href="/fee" className={props.isColorWhite && "page-scroll color-white" || "page-scroll"}>Pricing</a>
+          <a href="/fee" className={props.isColorWhite ? "page-scroll color-white" : "page-scroll"}>Pricing</a>
         </li>
         <li>
-          <a href="/contactus#faq" className={props.isColorWhite && "page-scroll color-white" || "page-scroll"}>FAQ</a>
+          <a href="/contactus#faq" className={props.isColorWhite ? "page-scroll color-white" : "page-scroll"}>FAQ</a>
         </li>
         <li>
-          <a href="/contactus" className={props.isColorWhite && "page-scroll color-white" || "page-scroll"}>Contact us</a>
+          <a href="/contactus" className={props.isColorWhite ? "page-scroll color-white" : "page-scroll"}>Contact us</a>
         </li>
         <li>
-          <a href="/aboutus" className={props.isColorWhite && "page-scroll color-white" || "page-scroll"}>About us</a>
+          <a href="/aboutus" className={props.isColorWhite ? "page-scroll color-white" : "page-scroll"}>About us</a>
         </li>
       </ul>
     </div>

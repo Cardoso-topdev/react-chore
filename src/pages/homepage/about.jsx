@@ -1,7 +1,7 @@
 import React from 'react'
 
-const About = () => <div id="about" className="container">
-  <div className="row">
+const About = () => <div id="about" className="">
+  <div className="row container">
     <div className="col-xs-12 col-md-6 onboard">
       <div className="circle"></div>
       <div className="hLine"></div>
@@ -11,12 +11,13 @@ const About = () => <div id="about" className="container">
     </div>
     <div className="col-xs-12 col-md-3 col-md-offset-2 onboard">
       <div className="line"></div>
-      <div className="about-text" style={{ marginTop: 180 }}>
+      <div className="about-text section-title" style={{ marginTop: 180 }}>
         <h2>Freedom to spend</h2>
         <p>Give them the freedom to make online purchases using a Chore card</p>
       </div>
     </div>
-    <div className="col-xs-12 col-md-5 col-md-offset-1">
+    <div className="col-xs-12 col-md-5 col-md-offset-1 img-container" >
+      <img src="img/credit_card2-bk.png" className="credit_card2-bk img-responsive position-absolute" alt="" />
       <img src="img/credit_card2.png" className="img-responsive" alt="" />
     </div>
   </div>
