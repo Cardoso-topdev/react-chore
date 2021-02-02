@@ -102,7 +102,7 @@
     &[type=submit] {
       background-color: rgba(30, 144, 255, 1)!important;
       color: white;
-      box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+      // box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     }
   }
 }
@@ -110,14 +110,14 @@
   margin-left: 117px;
 }
 .onboard .line{
-	height: 467px;
+	height: 550px;
 }
 @include mq('desktop', max) {
   .onboard .circle{
     margin-left: 92px;
   }
   .onboard .line{
-    height: 419px;
+    height: 452px;
     &.first-line{
       height: 480px;
     }
@@ -130,15 +130,86 @@
     height: 300px;
   }
   .intro-image-transparency{
+    position: absolute;
     margin-top: -250px;
     background-image: url(../imgs/Union.png);
-	  background-repeat: no-repeat;
+	  // background-repeat: no-repeat;
   }
 
   .intro-image {
+    position: absolute;
     margin-top: -150px;
     margin-bottom: -150px;
     background-image: url(../imgs/union1.png);
-	  background-repeat: no-repeat;
+	  // background-repeat: no-repeat;
+  }
+  .credit_card1-bk{
+    top: 80px;
+  }
+  @include mq('tablet-wide', max) {
+    .img-container{
+      margin-top: -200px!important;
+      .credit_card1-bk{
+        top: 413px;
+      }
+    }
   }
 } 
+
+#about .container{
+  margin: auto;
+  .credit_card2-bk{
+    top: 130px;
+  }
+  @include mq('tablet-wide', max) {
+    .img-container{
+      margin-top: -300px;
+      .credit_card2-bk{
+        top: 540px;
+      }
+    }
+  }
+}
+
+#services {
+  margin-left: 20px;
+  .credit_card3-bk{
+    top: 80px;
+    left: -15px;
+  }
+  @include mq('tablet-wide', max) {
+    .content-wrapper{
+      display: flex;
+      flex-direction: column-reverse;
+      .img-container{
+        margin-top: -400px!important;
+        .credit_card3-bk{
+          top: 537px;
+        }
+      }
+    }
+  }
+}
+
+#portfolio{
+  .download-section{
+    height: 350px;
+    padding-top: 20px;
+  }
+  .img-fun{
+    top: 0;
+  }
+  @include mq('desktop', max) {
+    .download-section{
+      padding-top: 0;
+    }
+    .left-section{
+      width: 300px;
+    }
+  }
+  @include mq('tablet', max) {
+    .img-fun{
+      top: -20px;
+    }
+  }
+}

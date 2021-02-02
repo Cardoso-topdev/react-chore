@@ -49,7 +49,7 @@ const ContactUS = () => <div>
         </div>
       ))}
       <div className="career-wrapper" >
-        <img src="img/ic_career_girl 1.png" className="career-girl" />
+        <img src="img/ic_career_girl 1.png" className="career-girl"  alt=""/>
       </div>
     </div>
   </div>

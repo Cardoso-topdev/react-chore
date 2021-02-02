@@ -2,6 +2,22 @@
 @import '../../assets/styles/mixin';
 
 .intro{
+  .intro-wrapper{
+    position: relative;
+    img.intro-hero{
+      width: 450px;
+      right: 9px;
+      top: 100px;
+      position: absolute;
+    }
+    img.intro-hero-bk{
+      position: absolute;
+      z-index: -1;
+      width: 1000px;
+      right: -400px;
+      top: -200px;
+    }
+  }
   @include mq('tablet-wide', max) {
     .intro-text{
       h1{
