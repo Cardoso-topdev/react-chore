@@ -26,6 +26,9 @@ header{
           width: auto;
           position: absolute;
           bottom: 0;
+          @include mq('tablet', max) {
+            height: 500px;
+          }
         }
         .main-content{
           position: absolute;
@@ -52,8 +55,11 @@ header{
             position: relative;
           }
           p {
-            // max-height: 395px;
             overflow: hidden;
+            @include mq('phablet', max){
+              font-size: 18px;
+              line-height: 20px;
+            }
           }
         }
       }
@@ -62,7 +68,7 @@ header{
 } 
 
 .sale-section {
-  background-color: white;
+  background-color: #FFF8EE;
   position: relative;
   height: 1000px;
   .container {
@@ -113,8 +119,67 @@ header{
   }
 }
 
-.credit-academy{
+.chore-about{
   text-align: center;
+  .circle-bk{
+    margin: 51px 0 -131px 311px;
+  }
+  .section-container{
+    border-bottom: 1px solid rgba(22, 0, 92, 0.15);
+    .avatar-wrapper{
+      position: relative;
+      .pattern{
+        position: absolute;
+        z-index: -2;
+        width: 200px;
+      }
+      .about-avatar{
+        margin-bottom: 100px;
+        margin-top: 30px;
+        width: 65%;
+        box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+      }
+      .blue-pattern{
+        left: 100;
+        bottom: 0px;
+        @include mq('tablet-wide', max) {
+          left: 4vw;
+          bottom: 8vw;
+          z-index: -1;
+        }
+        @include mq('phablet', max) {
+          bottom: 20vw;
+          width: 31%;
+        }
+      }
+      .yellow-pattern{
+        top: 50%;
+        transform: translate(-50px, -50%);
+        @include mq('phablet', max) {
+          transform: translate(-50px, -80%);
+          width: 31%;
+        }
+      }
+    }
+    .avatar-description{
+      display: flex;
+      justify-content: space-between;
+      margin: 0 100px 200px 100px;
+      @include mq('tablet-wide', max) {
+        margin: 0 5vw 200px 5vw;
+      }
+      p{
+        margin: 20px;
+        text-align: left!important;
+        font-family: 'Lato';
+        font-size: 18px;
+        color: rgba(42, 32, 74, 0.8);
+        @include mq('phablet', max) {
+          font-size: 10px;
+        }
+      }
+    }
+  }
   .user-section{
     display: flex;
     margin-bottom: 150px;
@@ -171,22 +236,28 @@ header{
       margin: 20px 20px 0 0;
     }
   }
-  .credit-bk-container{
+  .chore-bk-container{
     position: absolute;
     display: flex;
     width: 100%;
     justify-content: space-between;
     margin-top: 120px;
+    .img-bk{
+      position: absolute;
+      z-index: -1;
+    }
     .vect-1 {
       height: 493px;
-      position: absolute;
+      @include mq('phablet', max) {
+        height: 200px;
+      }
     }
     .vect-2 {
-      margin-top: 200px;
-      position: absolute;
+      margin-top: -220px;
       right: 0;
-      @include mq('tablet-wide', max) {
-        margin-top: 600px;
+      @include mq('phablet', max) {
+        height: 200px;
+        margin-top: -42px;
       }
     }
   }
@@ -194,7 +265,11 @@ header{
     .career-wrapper {
       text-align: left;
       padding-left: 150px;
-      margin-top: -100px;
+      margin-top: -100px;    
+      margin-bottom: -23px;
+      @include mq('phablet', max) {
+        padding-left: 10px;
+      }
     }
 
   }

@@ -6,7 +6,8 @@ const ScrollToTop = props => {
   const prevPropsRef = React.useRef(props);
 
   React.useEffect( () => {
-    if ( props.location !== prevPropsRef.current.location) window.scrollTo(0, 0)
+    console.log(props.location.pathname)
+    if ( props.location.pathname !== "/" && (props.location !== prevPropsRef.current.location)) window.scrollTo(0, 0)
     prevPropsRef.current = props;
   })
 

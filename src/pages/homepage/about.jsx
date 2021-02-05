@@ -10,7 +10,11 @@ const About = () => <div id="about" className="">
       <div className="circle" style={{ marginLeft: '37%' }}></div>
     </div>
     <div className="col-xs-12 col-md-3 col-md-offset-2 onboard">
-      <div className="line"></div>
+      <div className="line-wrapper">
+        <div className="line line-top"></div>
+        <img className="line-number" src="img/number2.png" alt="" />
+        <div className="line line-bottom"></div>
+      </div>
       <div className="about-text section-title" style={{ marginTop: 180 }}>
         <h2>Freedom to spend</h2>
         <p>Give them the freedom to make online purchases using a Chore card</p>
