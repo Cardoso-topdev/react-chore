@@ -8,6 +8,9 @@
     h2{
       font-size: 72px;
     }
+    p {
+      font-size: 16px;
+    }
     @include mq('tablet', max) {
       h2{
         text-align: center;
@@ -15,6 +18,12 @@
     }
     .contact-form{
       padding: 0 100px 0 0;
+      .btn-send-wrapper{
+        text-align: center;
+        input.btn{
+          width: 50%;
+        }
+      }
       @include mq('tablet-wide', max) {
         padding: 0;
       }
@@ -41,8 +50,11 @@
   }
 }
 .faq-container {
+  background: #FFF8EE;
+  .intro-image{
+    z-index: -1;
+  }
   .main-container {
-    background: #FFF8EE;
     padding-top: 100px;
     h2 {
       text-align: center;
@@ -54,6 +66,10 @@
       width: 550px;
       margin-top: 40px;
       @include mq('tablet', max) {
+        width: 85%;
+        
+      }
+      @include mq('tablet', max) {
         p{
           text-align: left !important;
           margin-left: 0 !important;
@@ -62,16 +78,23 @@
       .accordion-item__title{
         margin-left: -50px;
         cursor: pointer;
+        padding-left: 70px;
         &::before{
           content: "";
           padding-right: 50px;
+          margin-left: -50px;
           background: url("../../assets/imgs/plus.svg") no-repeat center;
         }
         &[aria-expanded=true]::before {
           content: "";
           padding-right: 50px;
+          margin-left: -50px;
           background: url("../../assets/imgs/minus.svg") no-repeat center;
         }
+      }
+      .accordion-item__content{
+        white-space: pre-line;
+        margin-top: 20px;
       }
     }
     .career-girl{

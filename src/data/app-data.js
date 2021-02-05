@@ -657,33 +657,29 @@ Last updated: December 1st, 2020
 `
 export const FAQ_DATA = [
   {
-    title: "When will Credit Academy be available?",
-    content: `Cognitive the stand spot. In, to who paper tag family in ideas was and gilded rethoric five he not another the but noting even his got divided rolled make that expected his of usual. Were was concepts of wonder much boa applications our to a of would from more prudently.
-    .`
+    title: "What is Chore?",
+    content: `The Chore app is a virtual card solution to a real parent problem, chores, and allowances vs. kids.
+    
+    Let’s face it, getting your kids to do chores is a struggle, but not when it comes for them to ask for money. Chore empowers parents to create a virtual card your kids can use online. You set the limit on how much they can spend, preventing your child to spend more than the limit set by you. You add chores your kids use to pay their balance. Chore cards can be paused or cancel at any time. You have real-time transaction data of your child's spending and so much more. Try it! We’re sure you will love it!`
   },
   {
-    title: "What do I need to get started?",
-    content: `Cognitive the stand spot. In, to who paper tag family in ideas was and gilded rethoric five he not another the but noting even his got divided rolled make that expected his of usual. Were was concepts of wonder much boa applications our to a of would from more prudently.
-    .`
+    title: "Who is Chore meant for?",
+    content: `Chore app is for families, who struggle with their kids about doing chores and money. Instead of an allowance, give your child a Chore card. If they want to continue to get money, they will learn how to get it.`
   },
   {
-    title: "Will Credit Academy charge fees?",
-    content: `Cognitive the stand spot. In, to who paper tag family in ideas was and gilded rethoric five he not another the but noting even his got divided rolled make that expected his of usual. Were was concepts of wonder much boa applications our to a of would from more prudently.
-    .`
+    title: "How much does Chore cost?",
+    content: `The subscription is absolutely FREE. The download for the app is $1.99. What do you get with that? Your subscription allows you to create up to 5 Chore cards, set a different spending limit for each card, add customized chores with money value for each card, connect as many devices to the account as you like, and have total control of your child's spending.`
   },
   {
-    title: "How will you prevent fraud?",
-    content: `Cognitive the stand spot. In, to who paper tag family in ideas was and gilded rethoric five he not another the but noting even his got divided rolled make that expected his of usual. Were was concepts of wonder much boa applications our to a of would from more prudently.
-    .`
+    title: "How does Chore provide banking services?",
+    content: `When you create a Chore account you will need to link your bank account to be able to create Chore cards. The ability to create virtual cards is provided by Privacy Inc.`
   },
   {
-    title: "Can businesses use Credit Academy?",
-    content: `Cognitive the stand spot. In, to who paper tag family in ideas was and gilded rethoric five he not another the but noting even his got divided rolled make that expected his of usual. Were was concepts of wonder much boa applications our to a of would from more prudently.
-    .`
+    title: "What do I need to do to get started?",
+    content: `Easy! Download the iOS app to your device and follow the easy steps to activate your account.`
   },
   {
-    title: "Can I use my local currency in Credit Academy?",
-    content: `Cognitive the stand spot. In, to who paper tag family in ideas was and gilded rethoric five he not another the but noting even his got divided rolled make that expected his of usual. Were was concepts of wonder much boa applications our to a of would from more prudently.
-    .`
-  },
+    title: "Have a question for us?",
+    content: `We are here to answer it! Please contact us.`
+  }
 ]

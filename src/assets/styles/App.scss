@@ -8,11 +8,26 @@
   height: 40vmin;
   pointer-events: none;
 }
-
-.link-btns{
-  display: flex;
-  flex-direction: column;
-  min-width: 175px;
+#footer{
+  img{
+    @include mq('phablet', max) {
+      width: 70%;
+    }
+  }
+  .link-wrapper{
+    height: 145px;
+    .link-btns{
+      display: flex;
+      flex-direction: column;
+      min-width: 175px;
+      top: 50%;
+      position: absolute;
+      transform: translate(0, -50%);
+      @include mq('tablet-wide', max) {
+        position: relative;
+      }
+    }
+  }
 }
 
 .normal-desc {
@@ -93,6 +108,12 @@
   }
 }
 
+@include mq('tablet-small', max) {
+  h1, h2{
+    font-size: 28px!important;
+  }
+}
+
 .form-item{
   input, textarea{
     border-radius: 15px;
@@ -103,23 +124,6 @@
       background-color: rgba(30, 144, 255, 1)!important;
       color: white;
       // box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    }
-  }
-}
-.onboard .circle{
-  margin-left: 117px;
-}
-.onboard .line{
-	height: 550px;
-}
-@include mq('desktop', max) {
-  .onboard .circle{
-    margin-left: 92px;
-  }
-  .onboard .line{
-    height: 452px;
-    &.first-line{
-      height: 480px;
     }
   }
 }
@@ -151,6 +155,15 @@
       margin-top: -200px!important;
       .credit_card1-bk{
         top: 413px;
+        width: 80%;
+      }
+    }
+  }
+  @include mq('tablet', max) {
+    .img-container{
+      margin-top: -200px!important;
+      .credit_card1-bk{
+        top: 50vw;
       }
     }
   }
@@ -171,45 +184,17 @@
   }
 }
 
-#services {
-  margin-left: 20px;
-  .credit_card3-bk{
-    top: 80px;
-    left: -15px;
-  }
-  @include mq('tablet-wide', max) {
-    .content-wrapper{
-      display: flex;
-      flex-direction: column-reverse;
-      .img-container{
-        margin-top: -400px!important;
-        .credit_card3-bk{
-          top: 537px;
-        }
-      }
-    }
-  }
+#menu{
+  position: fixed;
+  margin-bottom: -20px;
 }
 
-#portfolio{
-  .download-section{
-    height: 350px;
-    padding-top: 20px;
-  }
-  .img-fun{
-    top: 0;
-  }
-  @include mq('desktop', max) {
-    .download-section{
-      padding-top: 0;
-    }
-    .left-section{
-      width: 300px;
-    }
-  }
-  @include mq('tablet', max) {
-    .img-fun{
-      top: -20px;
-    }
-  }
+p{
+  position: relative;
+}
+
+@include mq('phablet', max) {
+  img.intro-hero{
+    width: 80%!important;
+  } 
 }

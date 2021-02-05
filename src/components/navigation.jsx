@@ -30,9 +30,6 @@ const Navigation = props => <nav id="menu" className="navbar navbar-default navb
           <a href="/#features" className={props.isColorWhite ? "page-scroll color-white" : "page-scroll"}>How it works</a>
         </li>
         <li>
-          <a href="/fee" className={props.isColorWhite ? "page-scroll color-white" : "page-scroll"}>Pricing</a>
-        </li>
-        <li>
           <a href="/contactus#faq" className={props.isColorWhite ? "page-scroll color-white" : "page-scroll"}>FAQ</a>
         </li>
         <li>

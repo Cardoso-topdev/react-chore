@@ -10,7 +10,7 @@ import "./style.scss"
 import Footer from '../../components/footer';
 import IntroChore from './intro-chore'
 
-const HomePage = () => <React.Fragment>
+const HomePage = () => <div className="homepage">
   <Navigation isColorWhite={false} />
   <Intro data={JsonData.Header} />
   <IntroChore />
@@ -19,6 +19,6 @@ const HomePage = () => <React.Fragment>
   <Services />
   <Gallery />
   <Footer />
-</React.Fragment>
+</div>
 
 export default HomePage

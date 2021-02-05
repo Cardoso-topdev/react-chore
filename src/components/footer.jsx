@@ -8,10 +8,11 @@ const Footer = () => <div>
         <img src="img/logo.png" alt="" />
         <p className="copyright">© 2019 Chore, a Marc Barnes Corp. | Patent Pending </p>
       </div>
-      <div className="col-xs-12 col-md-2 col-md-offset-1 link-btns">
-        <Link to="./privacy" className="list">Chore Privacy</Link>
-        <Link to='./agreement' className="list">Terms and Conditions</Link>
-        <Link to='./fee' className="list">Fees</Link>
+      <div className="col-xs-12 col-md-2 col-md-offset-1 link-wrapper">
+        <div className="link-btns">
+          <Link to="./privacy" className="list">Chore Privacy</Link>
+          <Link to='./agreement' className="list">Terms and Conditions</Link>
+        </div>
       </div>
     </div>
   </div>

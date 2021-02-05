@@ -18,8 +18,11 @@ const Services = () => <div id="services">
       <div className="row position-relative content-wrapper">
         <div className="col-xs-12 col-md-5 col-md-offset-1 mt-100 img-container">
           <img src="img/icon5.png" style={{ marginLeft: 150 }} alt="" />
-          <img src="img/credit_card3-bk.png" className="credit_card3-bk img-responsive position-absolute" alt="" />
-          <img src="img/credit_card3.png" className="img-responsive mt-100" alt="" />
+          <div className="card3-wrapper mt-100">
+            <img src="img/Illustration-2.png" alt="" className="img-illusion-2"/>
+            <img src="img/credit_card3-bk.png" className="credit_card3-bk img-responsive position-absolute" alt="" />
+            <img src="img/credit_card3.png" className="img-card3 img-responsive" alt="" />
+          </div>
           <img src="img/icon6.png" className="icon6" alt="" />
         </div>
         <div className="col-md-2 onboard">

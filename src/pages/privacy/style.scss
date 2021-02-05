@@ -8,6 +8,10 @@
       position: relative;
       cursor: pointer;
       transition: color .3s ease-in-out;
+      @include mq('phablet', max) {
+        padding-right: 36px;
+        font-size: 20px;
+      }
       &[aria-expanded=true]::after {
         transform: rotate(180deg);
       }

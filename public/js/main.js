@@ -49,3 +49,11 @@ function main() {
 
 }
 main();
+
+$(document).scroll(function() {
+  if($(window).scrollTop() > 100){
+    $("#menu").addClass("show-background");
+  }else if($(window).scrollTop() < 100){
+    $("#menu").removeClass("show-background");
+  }
+});
