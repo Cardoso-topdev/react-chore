@@ -1,9 +1,9 @@
-# Credit Academy Privacy landing page
+# Use Chore landing page
 
 
 
 ## Description
-This is a ReactJS based landing page of credit academy
+This is a ReactJS based landing page of Chore
 
 ## Make it Yours!
 ### 1. Preps
